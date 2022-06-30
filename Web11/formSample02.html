@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>フォームサンプル02</title>
+	</head>
+	<body>
+		<h1>フォームサンプル02</h1>
+		<!-- formタグで全体を囲う -->
+		<!-- リクエストパラメータの送信先と、リクエスト方法を記述する -->
+		<form action="/Web11/formSample02" method="get">
+			名前：<input type="text" name="name"><br>
+			<input type="submit" value="名前を送信">
+		</form>
+		
+		<hr>
+		
+		<form action="http://172.16.26.50:8080/Web05/formSample01" method="post">
+			<!-- 名前入力や性別選択、送信ボタンを配置していく -->
+			コメント：<input type="text" name="comment"><br>
+			<input type="submit" value="教官機へデータ送信">
+ 		</form>
+	</body>
+</html>
